@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Naziya Khan, QA Lead specialising in ERP and HRMS application testing for web and mobile.">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>Naziya Khan QA Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: navy header band like the LinkedIn banner, then a single reading column with tabbed sample work */
+:root{
+  --bg:#f5f8fc; --surface:#ffffff; --fg:#13233a; --muted:#52627a; --line:#dbe4ef;
+  --accent:#0e7490; --accent-soft:#e0f2f7; --band:#0b1f3a; --band2:#0f5c73; --band-fg:#ffffff; --band-sub:#bfe3f5; --sky:#38bdf8;
+  --crit:#b42318; --crit-bg:#fdecea; --high:#b54708; --high-bg:#fef3e2; --med:#8a6d00; --med-bg:#fdf8dc; --low:#1d6b45; --low-bg:#e6f4ec;
+  --display:"Manrope","Segoe UI",system-ui,sans-serif; --body:"Source Sans 3","Segoe UI",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0a1626; --surface:#102238; --fg:#e6eef8; --muted:#9db0c8; --line:#22384f;
+  --accent:#5ccfe6; --accent-soft:#11364a; --band:#071324; --band2:#0c4a5c; --band-fg:#ffffff; --band-sub:#bfe3f5; --sky:#38bdf8;
+  --crit:#ff8a7a; --crit-bg:#3a1714; --high:#ffb267; --high-bg:#3a2510; --med:#f2d55c; --med-bg:#332c0d; --low:#6fd3a0; --low-bg:#10301f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0a1626; --surface:#102238; --fg:#e6eef8; --muted:#9db0c8; --line:#22384f;
+  --accent:#5ccfe6; --accent-soft:#11364a; --band:#071324; --band2:#0c4a5c; --band-fg:#ffffff; --band-sub:#bfe3f5; --sky:#38bdf8;
+  --crit:#ff8a7a; --crit-bg:#3a1714; --high:#ffb267; --high-bg:#3a2510; --med:#f2d55c; --med-bg:#332c0d; --low:#6fd3a0; --low-bg:#10301f; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.2;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+
+/* Hero */
+.hero{background:linear-gradient(115deg,var(--band) 0%,#123a63 55%,var(--band2) 100%);color:var(--band-fg);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:40px 40px;pointer-events:none}
+.hero .wrap{position:relative;padding-block:56px 48px;display:grid;gap:18px}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--sky)}
+.hero h1{font-size:clamp(38px,6vw,60px);font-weight:800;letter-spacing:.01em}
+.hero .role{font-family:var(--display);font-size:clamp(18px,2.4vw,24px);font-weight:600;color:var(--band-sub)}
+.hero p{max-width:64ch;margin:0;color:#e3eefa}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{border:1.5px solid rgba(147,197,253,.5);background:rgba(255,255,255,.08);border-radius:999px;padding:6px 16px;font-weight:500;font-size:15px}
+.chip b{color:var(--sky)}
+.cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-block;background:var(--sky);color:#06213a;font-weight:600;text-decoration:none;padding:10px 20px;border-radius:8px}
+.cta span{color:var(--band-sub);font-size:15px}
+
+section{padding-block:48px 8px}
+section > h2{font-size:28px;margin-bottom:6px}
+.lead{color:var(--muted);margin:0 0 24px;max-width:65ch}
+
+/* What I do */
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.item{border-top:3px solid var(--accent);padding-top:14px;min-width:0}
+.item h3{font-size:18px;margin-bottom:6px}
+.item p{margin:0;color:var(--muted);font-size:16px}
+
+/* Domain */
+.domains{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.domain{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;min-width:0}
+.domain h3{font-size:19px;margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{background:var(--accent-soft);color:var(--fg);border-radius:6px;padding:4px 10px;font-size:15px}
+
+/* Experience */
+.timeline{display:grid;gap:0;border-left:2px solid var(--line);margin-left:6px}
+.job{position:relative;padding:0 0 28px 26px}
+.job::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--surface);border:3px solid var(--accent)}
+.job h3{font-size:19px}
+.job .when{font-family:var(--mono);font-size:13px;color:var(--muted);margin:2px 0 8px}
+.job ul{margin:0;padding-left:20px;color:var(--fg)}
+.job li{margin-bottom:4px}
+
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+footer{margin-top:48px;border-top:1px solid var(--line)}
+footer .wrap{padding-block:24px 40px;color:var(--muted);font-size:15px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">QA Portfolio</div>
+    <h1>Naziya Khan</h1>
+    <div class="role">QA Lead · ERP &amp; HRMS Applications · Web &amp; Mobile</div>
+    <p>I lead and coordinate a QA team testing ERP and HRMS products across multiple projects, and own quality for our monthly releases, from test planning through regression and release readiness.</p>
+    <div class="chips">
+      <div class="chip"><b>3+ yrs</b> in QA</div>
+      <div class="chip">Leading a <b>QA team</b></div>
+      <div class="chip"><b>Monthly</b> release cycles</div>
+    </div>
+    <div class="cta">
+      <a class="btn" href="https://www.linkedin.com/in/naziyankhan99" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      <span>Thrissur, Kerala, India</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section id="what-i-do">
+  <h2>What I do</h2>
+  <p class="lead">My work as QA Lead covers four areas, from planning the team's week to signing off a release.</p>
+  <div class="grid4">
+    <div class="item"><h3>Team &amp; schedule coordination</h3><p>Allocate testers across projects, prepare daily and weekly test plans, follow up on pending work and keep testing on the planned timeline.</p></div>
+    <div class="item"><h3>Release management</h3><p>Plan and run QA for monthly releases: test execution, bug-fix verification, retesting, regression and release readiness.</p></div>
+    <div class="item"><h3>Defect triage</h3><p>Classify bugs by severity, impact, urgency and business risk. Track critical, reopened and blocked issues with developers until closure.</p></div>
+    <div class="item"><h3>Test design &amp; review</h3><p>Prepare and review test scenarios for functional, integration, regression, UI/UX and permission testing, with clear expected results.</p></div>
+  </div>
+</section>
+
+<section id="domains">
+  <h2>Domain coverage</h2>
+  <p class="lead">Business workflows I test end to end, including how they connect to stock, accounts, tax and reports.</p>
+  <div class="domains">
+    <div class="domain"><h3>ERP</h3><div class="tags">
+      <span class="tag">Masters</span><span class="tag">Sales</span><span class="tag">Purchase</span><span class="tag">Inventory</span><span class="tag">Finance &amp; Accounts</span><span class="tag">GST reports</span><span class="tag">Approvals</span><span class="tag">User permissions</span><span class="tag">Integrations</span>
+    </div></div>
+    <div class="domain"><h3>HRMS</h3><div class="tags">
+      <span class="tag">Employee management</span><span class="tag">Attendance</span><span class="tag">Shifts</span><span class="tag">Leave</span><span class="tag">Payroll-related workflows</span><span class="tag">Role permissions</span>
+    </div></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <p class="lead">Travidux Technologies Pvt. Ltd., Chalakudy, Kerala</p>
+  <div class="timeline">
+    <div class="job">
+      <h3>QA Lead</h3>
+      <div class="when">Nov 2024 – Present</div>
+      <ul>
+        <li>Lead and coordinate a QA team across multiple ERP and HRMS projects.</li>
+        <li>Own QA for monthly releases: planning, execution, bug-fix verification, retesting, regression and release readiness.</li>
+        <li>Classify and prioritise defects by severity, impact, urgency and business risk.</li>
+        <li>Review test scenarios and test cases prepared by the team.</li>
+        <li>Share testing progress with developers, project managers and the Delivery Manager.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Software Tester</h3>
+      <div class="when">Apr 2023 – Oct 2024</div>
+      <ul>
+        <li>Performed functional, integration and regression testing of ERP and HRMS modules on web and mobile.</li>
+        <li>Prepared and executed test scenarios for masters, sales, purchase, inventory and finance workflows.</li>
+        <li>Logged, tracked and retested defects until closure.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Software Testing Course, STC Technologies, Kochi</h3>
+      <div class="when">3-month training</div>
+      <ul>
+        <li>Course projects on a Hotel Management System and a Tour Package System: test scenarios, test cases, execution and defect reporting.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="two">
+    <div>
+      <h2>Skills</h2>
+      <p class="lead">Testing and leadership</p>
+      <div class="tags">
+        <span class="tag">Test planning</span><span class="tag">Test case review</span><span class="tag">Functional testing</span><span class="tag">Regression testing</span><span class="tag">Integration testing</span><span class="tag">UI/UX testing</span><span class="tag">Mobile app testing</span><span class="tag">Defect triage</span><span class="tag">Release management</span><span class="tag">Team coordination</span><span class="tag">Stakeholder communication</span><span class="tag">Agile</span>
+      </div>
+    </div>
+    <div>
+      <h2>Education</h2>
+      <p class="lead">Sacred Heart College, Chalakudy</p>
+      <div class="timeline">
+        <div class="job"><h3>Master's Degree, Computer Science</h3><div class="when">2020 – 2022 · Grade A+</div></div>
+        <div class="job"><h3>Bachelor's Degree, Mathematics</h3><div class="when">2017 – 2020</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer><div class="wrap">
+  <span>Naziya Khan · QA Lead · khannaziya.qa@gmail.com</span>
+  <span>LinkedIn: <a href="https://www.linkedin.com/in/naziyankhan99" target="_blank" rel="noopener">linkedin.com/in/naziyankhan99</a></span>
+</div></footer>
+
+
+</body>
+</html>
